@@ -1,17 +1,18 @@
+// @codekit-prepend "cd-animation.js";
 // @codekit-prepend "scrollTrigger.js";
 
-$( document ).ready(function() {
+// $( document ).ready(function() {
 
-   $("#show-form-btn").on("click", function(){
-      //console.log("button clicked");
+//    $("#show-form-btn").on("click", function(){
+//       //console.log("button clicked");
 
-      // hide contact-button-section
-      $("#contact-button-section").hide();
+//       // hide contact-button-section
+//       $("#contact-button-section").hide();
 
-      // show form container
-      $("#form-container").show();
+//       // show form container
+//       $("#form-container").show();
 
-   });
+//    });
 
-});
+// });
 
