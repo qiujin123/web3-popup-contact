@@ -1,3 +1,59 @@
 /* =============
     Base
 ============= */
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+input, button, textarea{
+    border: none;
+}
+
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-lg{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.show-for-xl{
+    display: none;
+    @include xl{
+        display: block;
+    }
+}
+.hero-container{
+    @include xl{
+        display: grid;
+        grid-template-areas: ". hero .";
+        grid-template-columns: auto 1440px auto;
+    }
+    >div{
+        grid-area: hero;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
+    >div{
+        grid-area: container;
+    }
+}

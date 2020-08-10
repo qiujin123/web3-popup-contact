@@ -6,220 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,800;1,900&family=Nunito:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
-    <!-- FancyBox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-    <!-- Tiny Slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <script src="https://kit.fontawesome.com/bb64da5fe1.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Web 3 Demo</title>
+    <title>Web 3 Pop-up Contact</title>
 </head>
 
 <body>
 
-    <header class="grid-container">
-      <div>
-        <section id="logo-container">
-          <a href="index.html"><img src="img/header/logo.svg" alt="mountain logo"></a>
-        </section>
     
-        <section id="burger-container">
-    
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="47px" height="40px" viewBox="0 0 47 29" id="burger">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                        <g id="lines" stroke="#000" stroke-width="6">
-                            <path id="bottom-line" d="M4.5 24.5h38" class="lines" />
-                            <path id="middle-line" d="M4.5 14.5h38" class="lines" />
-                            <path id="top-line" d="M4.5 4.5h38" class="lines" />
-                        </g>
+    <section>
+            <div>
+                <svg id="X" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#42B5A0" stroke-width="5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3.534 3.922l19.799 19.8M23.722 3.533l-19.8 19.8"/>
                     </g>
-                </svg> -->
-    
-    
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 29" width="47px" height="40px" id="burger">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                      <g  stroke-width="6">
-                        <path id="bottom-line" stroke="#000" d="M4.5 24.5h38" class="lines"/>
-                        <path id="middle-line" stroke="#000" d="M4.5 14.5h38" class="lines"/>
-                        <g id="arrow" transform="translate(4.5 14)">
-                          <path id="left-arrow" stroke="red" d="M0 .5h10"/>
-                          <path id="right-arrow" stroke="#DE0000" d="M0 .5h10"/>
-                        </g>
-                        <path id="top-line" stroke="#000" d="M4.5 4.5h38" class="lines"/>
-                      </g>
-                    </g>
-                  </svg> -->
-    
-    
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 29" width="47" height="40" id="burger">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-              <g stroke-width="6">
-                <path id="bottom-line" stroke="#F25C54" d="M4.5 24.5h38" class="lines" />
-                <path id="middle-line" stroke="#F25C54" d="M4.5 14.5h38" class="lines" />
-                <g id="arrow-down" transform="translate(4.5 14)">
-                  <path id="down-left-arrow" stroke="#F25C54" d="M0 .5h10" />
-                  <path id="down-right-arrow" stroke="#F25C54" d="M0 .5h10" />
-                </g>
-                <g id="arrow-up" transform="translate(32.5 14)">
-                  <path id="up-left-arrow" stroke="#F25C54" d="M0 .5h10" class="up-arrow" />
-                  <path id="up-right-arrow" stroke="#F25C54" d="M0 .5h10" class="up-arrow" />
-                </g>
-                <path id="top-line" stroke="#F25C54" d="M4.5 4.5h38" class="lines" />
-              </g>
-            </g>
-          </svg>
-    
-        </section>
-      </div>
-    </header>
-    
-
-    <nav id="main-nav">
-            <ul>
-                <li class="show-nav-buttons hide-nav-buttons"><button id="planning-btn"><i class="fas fa-map-marked-alt"></i>Hike Planning</button></li>
-                <li class="show-nav-buttons hide-nav-buttons"><button id="weather-btn"><i class="fas fa-sun-cloud"></i>Weather</button></li>
+                </svg>
         
-                <li class=" hide-nav-buttons"><a href="index.html#index-planning"><i class="fas fa-map-marked-alt"></i>Hike Planning</a></li>
-                <li class=" hide-nav-buttons"><a href="index.html#index-weather"><i class="fas fa-sun-cloud"></i>Weather</a></li>
+                <i class="fas fa-compact-disc"></i>
         
-                <li><a href="following.html"><i class="fas fa-share-alt-square"></i>Follow Us</a></li>
-                <li><a href="planning.html"><i class="fas fa-suitcase-rolling"></i>Trip Planning</a></li>
-                <li><a href="views.html"><i class="fas fa-mountains"></i>Mountain Views</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
-            </ul>
-        </nav>
         
-
-
-    <section class="grid-container content-spacing page-intro" id="index-hikes">
-        <div>
-            <h1>Mountain Hikes</h1>
-            <p>Mountain hiking embodies what hiking is all about: breathtaking views, fresh air, and a good workout. Here’s you’re guide on how to hike the mountains safely.</p>
-            <a href="#" class="red-button">Trail Maps</a>
-        </div>
-    </section>
-    
-    <section id="index-hero">
-        <img id="hero-img " src="img/home/hero.jpg" alt="picture of forset">
-    </section>  
-    
-    <section class="grid-container" id="index-brands">
-        <div>
-            <ul>
-                <li><img id="logo-1" src="img/home/brands/tnf.svg" alt="North Face logo"></li>
-                <li><img id="logo-2" src="img/home/brands/patagonia.svg" alt="Patagonia logo"></li>
-                <li><img id="logo-3" src="img/home/brands/yeti.svg" alt="Yeti logo"></li>
-                <li><img id="logo-4" src="img/home/brands/columbia.svg" alt="Columbia logo"></li>
-                <li><img id="logo-5" src="img/home/brands/coleman.svg" alt="Coleman logo"></li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="grid-container content-spacing" id="index-planning">
-        <div>
-    
-            <section id="card">
-                <div>
-                    <i id="card-icon" class="fal fa-alarm-exclamation"></i>
+                <h2>Get in Touch!</h2>
+                <h3 id="description">Have a question or a comment about our products? <br> Feel free to share it with us.</h3>
+        
+                <div id="form">
+                    <form action="https://formspree.io/mlepowjj" method="POST">
+                        <section>
+                            <input type="text" placeholder="Name" name="name">
+                        </section>
+                        <section>
+                            <input type="email" placeholder="Email" name="email">
+                        </section>
+                        
+                        <section>
+                            <textarea placeholder="Your Message" name="comment" cols="50" rows="5"></textarea>
+                        </section>
+                        <section>
+                            <h3>We don’t share your information to others</h3>
+                        </section>
+                        <div>
+                            <button type="submit" class="button">SEND</button>
+                        </div>
+                    </form>
                 </div>
-                <h2 class="card-text">“Don’t forget</h2>
-                <h2 class="card-text">your alarm clock"</h2>
-                <p class="card-text">- Some one who hiked before</p>
-            </section>
-    
-    
-            <article>
-                <h1 class="sub-title">Planning a Mountain Hike</h1>
-                <p>The first hiking tip has more to do with expectation setting than technique. If you normally hike at about a 2-3mph pace (which is pretty normal), expect to cover 0.5-1.5 mph when hiking up a mountain.</p>
-            </article>
-    
-            <section id="planning-hero">
-                <div></div>
-            </section>
-        </div>
-    </section>
-    
-    <section class="grid-container content-spacing" id="index-weather">
-        <div>
-            <section>
-                <h1 class="sub-title">Mountain Weather</h1>
-                <article>
-                    <h2>Things you will need.</h2>
-                    <p>You’re going to want to check the weather for the mountain that you’re hiking. A simple Google search will usually do the trick. The important thing to note is that the weather is often colder and windier in the mountains, and the weather can change quickly.</p>
-                </article>
-                <article>
-                    <h2>Things to say no to.</h2>
-                    <p>Unless you have experience hiking mountains in the snow and ice, don’t do it.</p>
-                </article>
-                <a href="#" class="red-button">Download App</a>
-            </section>
-    
-            <aside>
-                <ul>
-                    <!-- <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 90">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="sun" fill="#F5A714" fill-rule="nonzero">
-                            <g id="sun-ray" transform="translate(.001 .312)">
-                              <path d="M43.896 15.56a2.778 2.778 0 01-2.778-2.781V3.174A2.79 2.79 0 0143.896.387a2.784 2.784 0 012.78 2.787v9.605a2.772 2.772 0 01-2.78 2.78" id="Fill-1"/>
-                              <path d="M43.896 88.2a2.786 2.786 0 01-2.778-2.787v-9.605a2.78 2.78 0 015.558 0v9.605a2.78 2.78 0 01-2.78 2.787" id="Fill-4"/>
-                              <path d="M12.384 47.076h-9.6A2.783 2.783 0 010 44.29a2.773 2.773 0 012.785-2.772h9.599a2.765 2.765 0 012.778 2.772 2.775 2.775 0 01-2.778 2.785" id="Fill-6"/>
-                              <path d="M85.024 47.076h-9.603a2.777 2.777 0 01-2.785-2.78 2.777 2.777 0 012.785-2.777h9.603a2.772 2.772 0 012.768 2.776 2.772 2.772 0 01-2.768 2.78" id="Fill-8"/>
-                              <path d="M67.183 24.568a2.785 2.785 0 01-1.968-.814 2.767 2.767 0 010-3.927l6.804-6.798a2.778 2.778 0 013.933 0 2.79 2.79 0 01-.019 3.937l-6.78 6.788a2.794 2.794 0 01-1.97.814" id="Fill-10"/>
-                              <path d="M14.892 76.857a2.75 2.75 0 01-1.962-.813 2.787 2.787 0 01-.01-3.941l6.795-6.783a2.786 2.786 0 013.934 0 2.766 2.766 0 010 3.935l-6.79 6.79a2.772 2.772 0 01-1.967.812" id="Fill-12"/>
-                              <path d="M73.983 76.451c-.725 0-1.43-.28-1.966-.821l-6.804-6.793a2.773 2.773 0 010-3.93 2.782 2.782 0 013.94 0l6.78 6.798a2.772 2.772 0 01.018 3.925 2.803 2.803 0 01-1.968.821" id="Fill-14"/>
-                              <path d="M21.688 25.046c-.714 0-1.42-.266-1.972-.82l-6.785-6.792a2.757 2.757 0 010-3.925 2.78 2.78 0 013.93 0l6.789 6.79a2.756 2.756 0 010 3.926 2.715 2.715 0 01-1.962.821" id="Fill-16"/>
-                            </g>
-                            <path d="M43.897 21.364c-12.83 0-23.236 10.407-23.236 23.238 0 12.852 10.405 23.245 23.236 23.245 12.833 0 23.239-10.393 23.239-23.245 0-12.83-10.406-23.238-23.239-23.238m0 5.57c9.759 0 17.686 7.922 17.686 17.668 0 9.746-7.927 17.684-17.686 17.684-9.746 0-17.673-7.938-17.673-17.684 0-9.746 7.927-17.667 17.673-17.667" id="circle"/>
-                          </g>
-                        </g>
-                      </svg></li> -->
-                    <li><img id="weather-logo-1" src="img/home/weather/thunder.svg" alt="thunder icon"></li>
-                    <li><img id="weather-logo-2" src="img/home/weather/sun.svg" alt="sun icon"></li>
-                    <li><img id="weather-logo-3" src="img/home/weather/wind.svg" alt="wind icon"></li>
-                    <li><img id="weather-logo-4" src="img/home/weather/snow.svg" alt="snow icon"></li>
-                </ul>
-            </aside>
-        </div>
-    </section>
-     <footer class="grid-container">
-             <div>
-                 <h1>Sign Up!</h1>
-                 <form action="#">
-                     <section>
-                         <div>
-                             <input type="text" placeholder="Email">
-                         </div>
-                         <div>
-                             <button><i class="fas fa-paper-plane"></i></button>
-                         </div>
-                     </section>
-                 </form>
-                 <ul>
-                     <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
-                     <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
-                     <li><a href="https://github.com/ target="_blank"><i class="fab fa-github"></i></a></li>
-                     <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                 </ul>
-             </div>
-         </footer>
+        
+                <svg id="handle" width="35" height="211" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                      <path d="M17-569c35.577 65.83 18.855 122.216-50.168 169.159C-136.7-329.427-54.776-266.627-68.41-195.673c-13.633 70.953-83.702 58.109-83.702 161.89C-152.112 35.407-209.075 70-323 70v-639H17z" fill="#FEC858"/>
+                      <path d="M25 0v173h10v38H0v-38h10V0h15z" fill="#FFF"/>
+                    </g>
+                  </svg>
+                  
+                <div id="waves">
+                    <svg id="thesvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359 639">
+                        <path d="M340,2.84217094e-13 C375.577214,65.8294084 358.854619,122.215673 289.832213,169.158793 C186.298605,239.573473 268.223662,302.373319 254.590115,373.326732 C240.956569,444.280145 170.887923,431.435601 170.887923,535.2178 C170.887923,604.405933 113.925282,639 0,639 L0,2.84217094e-13 L340,2.84217094e-13Z" id="wave1" fill-rule="nonzero" fill="#FEC858">
+                            <animate id="the-animation" begin="thesvg.mouseover" dur=”2s” repeatCount=1 attributeName=”d”
+                            values=
+                            "M340,2.84217094e-13 C375.577214,65.8294084 358.854619,122.215673 289.832213,169.158793 C186.298605,239.573473 268.223662,302.373319 254.590115,373.326732 C240.956569,444.280145 170.887923,431.435601 170.887923,535.2178 C170.887923,604.405933 113.925282,639 0,639 L0,2.84217094e-13 L340,2.84217094e-13Z;
+                            M340,2.84217094e-13 C280.013854,68.8207371 264.024775,123.320737 292.032766,163.5 C334.044751,223.768894 316.675552,283.738088 254.091491,341.433413 C191.507431,399.128739 230.416436,491.306754 145.468439,519.208606 C88.8364406,537.809841 40.3469611,577.740305 0,639 L0,2.84217094e-13 L340,2.84217094e-13Z;
+                            M340,2.84217094e-13 C375.577214,65.8294084 358.854619,122.215673 289.832213,169.158793 C186.298605,239.573473 268.223662,302.373319 254.590115,373.326732 C240.956569,444.280145 170.887923,431.435601 170.887923,535.2178 C170.887923,604.405933 113.925282,639 0,639 L0,2.84217094e-13 L340,2.84217094e-13Z;"
+                            fill="freeze" 
+                            calcMode="spline"
+                            keySplines="0.4 0 0.2 1; 0.4 0 0.2 1">
+                          </path>
+                    </svg>
+                    <!-- <svg id="thesvg" width="100" height="130" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path id="thepath" d="M39.29,39.27,36,45,8,39.27,0,21l8-7L23,5l16.29,9L45,32l-5.71,7.27Z" fill-rule="nonzero" fill="#070707">
+                        <animate id="the-animation" begin="thesvg.mouseover" dur="1s" repeatCount="1" attributeName="d" values=
+                    "M39.29,39.27,36,45,8,39.27,0,21l8-7L23,5l16.29,9L45,32l-5.71,7.27Z;
+                    M39.29,39.27,28,33,8,39.27,14,26,8,14l18,5,13.29-5L34,27l5.29,12.27Z;
+                    M39.29,39.27,36,45,8,39.27,0,21l8-7L23,5l16.29,9L45,32l-5.71,7.27Z;" 
+                        fill="freeze" 
+                        calcMode="spline"
+                        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1">            
+                      </path>
+                    </svg> -->
+                </div>
+                
+            </div>
+        </section>
     <!-- jQuery -->
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-             <!-- Greensock Scroll To Plugin -->
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
-             <!-- Greensock Scroll Trigger -->
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
-             <!-- Greensock -->
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
-             <!-- fancyBox -->
-             <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-             <!-- Tiny Slider -->
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-             
-             <script src="js/scripts-min.js"></script>       
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Greensock Scroll To Plugin -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+            <!-- Greensock Scroll Trigger -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+            <!-- Greensock -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+            <!-- fancyBox -->
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+            <!-- Tiny Slider -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+            
+            <script src="js/scripts-min.js"></script>       
 </body>
 
 </html>
