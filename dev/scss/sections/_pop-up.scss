@@ -1,11 +1,11 @@
 /* =============
     Pop-up
 ============= */
-section{
-    display: flex;
+#pop-up{
+    display: none;
+    // display: flex;
     align-items: center;
     justify-content: center;
-    
     >div{
         border: solid 1px red;
         position: relative;

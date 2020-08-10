@@ -1,3 +1,79 @@
 /* =============
     Header
 ============= */
+header{
+    position: fixed;
+    width: 100%;
+    div{
+        background-color: rgba($color: $darkpurple, $alpha: 0.6);
+        display: grid;
+        grid-template-columns:auto 55%;
+        grid-template-areas: "logo burger";
+        position: relative;
+        height: 50px;
+        @include md{
+            height: 70px;
+            grid-template-columns:auto 80%;
+            grid-template-areas: "logo nav";
+        }
+        #logo{
+            grid-area: logo;
+            color: $green;
+            font-size: rem-calc(50);
+            position: absolute;
+            left: 15px;
+            bottom: -20px;
+            text-shadow: -3px 8px 15px rgba($color: black, $alpha: 0.2);
+            @include md{
+                font-size: rem-calc(65);
+                left: 30px;
+                bottom: -30px;
+            }
+        }
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding-right: 15px;
+
+            @include md {
+                display: none !important;
+            }
+
+            i {
+                color: $green;
+                font-size: rem-calc(25);
+            }
+        }
+        #nav{
+            @include md{
+                grid-area: nav;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                justify-content: space-evenly;
+                
+                li{
+                    border-right: solid 2px $hotpink;
+                    width: 100%;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h4{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: rem-calc(20);
+                        font-weight: 500;
+                        color: $green;
+                        
+                    }
+                }
+                :last-child{
+                    border-right: unset;
+                }
+            }
+            
+        }
+    }
+}
