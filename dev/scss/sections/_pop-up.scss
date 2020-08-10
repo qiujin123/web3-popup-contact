@@ -2,16 +2,19 @@
     Pop-up
 ============= */
 #pop-up{
-    display: none;
+    // display: none;
+    position: absolute;
     // display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     >div{
         border: solid 1px red;
         position: relative;
         overflow: hidden;
         width: 700px;
         height: auto;
+        background-color: white;
+        z-index: 1;
         i{
             position: absolute;
             z-index: 1;

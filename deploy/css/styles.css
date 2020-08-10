@@ -622,9 +622,7 @@ header div #burger-container i {
     Pop-up
 ============= */
 #pop-up {
-  display: none;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
 }
 #pop-up > div {
   border: solid 1px red;
@@ -632,6 +630,8 @@ header div #burger-container i {
   overflow: hidden;
   width: 700px;
   height: auto;
+  background-color: white;
+  z-index: 1;
 }
 #pop-up > div i {
   position: absolute;
