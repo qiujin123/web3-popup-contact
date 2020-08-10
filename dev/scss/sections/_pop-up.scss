@@ -2,7 +2,7 @@
     Pop-up
 ============= */
 #pop-up{
-    // display: none;
+    display: none;
     position: absolute;
     // display: flex;
     // align-items: center;
@@ -49,7 +49,7 @@
         #waves{
             position: absolute;
             top: 0;
-            left: 0;
+            left: -20px;
             z-index: -1;
             width: 50%;
         }

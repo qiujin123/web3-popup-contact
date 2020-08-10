@@ -496,6 +496,11 @@ header div {
     grid-template-areas: "logo nav";
   }
 }
+@media (min-width: 1025px) {
+  header div {
+    grid-template-columns: auto 60%;
+  }
+}
 header div #logo {
   grid-area: logo;
   color: #42B5A0;
@@ -622,6 +627,7 @@ header div #burger-container i {
     Pop-up
 ============= */
 #pop-up {
+  display: none;
   position: absolute;
 }
 #pop-up > div {
@@ -665,7 +671,7 @@ header div #burger-container i {
 #pop-up > div #waves {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
   z-index: -1;
   width: 50%;
 }

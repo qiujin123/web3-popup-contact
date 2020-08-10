@@ -16,6 +16,9 @@ header{
             grid-template-columns:auto 80%;
             grid-template-areas: "logo nav";
         }
+        @include lg{
+            grid-template-columns:auto 60%;
+        }
         #logo{
             grid-area: logo;
             color: $green;
