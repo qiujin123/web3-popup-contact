@@ -23,6 +23,7 @@ $("#box").on("click", function(){
         musicBoxAnimationTimeline.play("musicToForm");
         canYouSeeTheForm = true;
     }else{
+        formAnimationTimeline.play();
         console.log
     }
 });

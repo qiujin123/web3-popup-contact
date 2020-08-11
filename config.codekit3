@@ -79,6 +79,30 @@
 		"oAP": "/deploy/pop-up.html",
 		"oF": 0
 		},
+	"/deploy/sound/1.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/sound/1.mp3",
+		"oF": 0
+		},
+	"/deploy/sound/2.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/sound/2.mp3",
+		"oF": 0
+		},
+	"/deploy/sound/eve.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/sound/eve.mp3",
+		"oF": 0
+		},
 	"/design/music store.sketch": {
 		"cB": 0,
 		"ft": 8192,
@@ -1170,7 +1194,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -1618,7 +1642,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {

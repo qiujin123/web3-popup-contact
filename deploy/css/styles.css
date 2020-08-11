@@ -661,6 +661,7 @@ header div #burger-container i {
   }
 }
 #pop-up > div #X {
+  z-index: 200;
   position: absolute;
   top: 30px;
   right: 30px;
