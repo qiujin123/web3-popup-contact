@@ -106,10 +106,12 @@
             }
             :nth-child(5){
                 border-bottom: none;
+                :hover{
+                    transition: 0.25s;
+                    color: $hotpink;
+                    background-color: $yellow;
+                }
             }
-            // :nth-child(6){
-            //     border-bottom: none;
-            // }
         }
         
     }

@@ -14,6 +14,6 @@ $("#X").on("mouseleave", function(){
 $("#X").on("click", function(){
     console.log("X click");
     musicBoxAnimationTimeline.reverse("musicToForm");
-    canYouSeeTheForm = false;
     formAnimationTimeline.reverse();
+    canYouSeeTheForm = false;
 });

@@ -727,6 +727,11 @@ header div #burger-container i {
 #pop-up > div #form :nth-child(5) {
   border-bottom: none;
 }
+#pop-up > div #form :nth-child(5) :hover {
+  transition: 0.25s;
+  color: #FA448D;
+  background-color: #FEC858;
+}
 #pop-up h2 {
   padding-top: 30px;
   text-align: center;
