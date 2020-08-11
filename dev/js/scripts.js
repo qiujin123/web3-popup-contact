@@ -1,5 +1,11 @@
+
 // @codekit-prepend "cd-animation.js";
 // @codekit-prepend "scrollTrigger.js";
+
+// @codekit-prepend "music-box-sound.js";
+// @codekit-prepend "music-box-animation.js";
+// @codekit-prepend "music-box-events.js";
+
 
 // $( document ).ready(function() {
 

@@ -1,0 +1,15 @@
+#music-box-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    #music {
+        #box {
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+    }
+}

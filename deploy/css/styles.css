@@ -628,6 +628,8 @@ header div #burger-container i {
 ============= */
 #pop-up {
   position: absolute;
+  align-items: center;
+  justify-content: center;
 }
 #pop-up #shadow-bg {
   position: fixed;
@@ -741,4 +743,16 @@ header div #burger-container i {
 }
 #pop-up #description {
   padding: 0;
+}
+
+#music-box-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#music-box-container #music #box {
+  cursor: pointer;
+  transition: 0.25s;
 }
