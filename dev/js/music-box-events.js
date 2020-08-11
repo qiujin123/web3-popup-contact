@@ -20,10 +20,10 @@ $("#box").on("mouseleave", function(){
 $("#box").on("click", function(){
     console.log("mouse click");
     if(canYouSeeTheForm === false){
+        formAnimationTimeline.play();
         musicBoxAnimationTimeline.play("musicToForm");
         canYouSeeTheForm = true;
     }else{
-        formAnimationTimeline.play();
         console.log
     }
 });

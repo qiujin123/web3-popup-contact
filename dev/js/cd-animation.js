@@ -1,7 +1,7 @@
 gsap.registerPlugin(MotionPathPlugin);
 
 
-var formAnimationTimeline = gsap.timeline();
+var formAnimationTimeline = gsap.timeline({paused:true});
 
 // gsap.set("#input-path",{transformOrigin: "center"});
 gsap.set(".input",{transformOrigin: "left center", alpha:1});

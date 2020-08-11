@@ -627,7 +627,8 @@ header div #burger-container i {
     Pop-up
 ============= */
 #pop-up {
-  position: absolute;
+  position: fixed;
+  margin: auto;
 }
 #pop-up #shadow-bg {
   position: fixed;

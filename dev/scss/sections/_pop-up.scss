@@ -3,10 +3,8 @@
 ============= */
 #pop-up{
     // display: none;
-    position: absolute;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    position: fixed;
+    margin: auto;
     #shadow-bg{
         position: fixed;
         height: 100vh;
