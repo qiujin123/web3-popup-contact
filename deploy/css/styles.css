@@ -627,7 +627,6 @@ header div #burger-container i {
     Pop-up
 ============= */
 #pop-up {
-  display: none;
   position: absolute;
 }
 #pop-up #shadow-bg {
@@ -635,6 +634,9 @@ header div #burger-container i {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+#pop-up #input-path-container {
+  display: none;
 }
 #pop-up > div {
   position: relative;
@@ -711,6 +713,12 @@ header div #burger-container i {
 #pop-up > div #form section ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #42B5A0;
+}
+#pop-up > div #form :nth-child(4) {
+  border-bottom: none;
+}
+#pop-up > div #form :nth-child(5) {
+  border-bottom: none;
 }
 #pop-up h2 {
   padding-top: 30px;

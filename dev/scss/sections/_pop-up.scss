@@ -2,7 +2,7 @@
     Pop-up
 ============= */
 #pop-up{
-    display: none;
+    // display: none;
     position: absolute;
     // display: flex;
     // align-items: center;
@@ -12,6 +12,9 @@
         height: 100vh;
         width: 100%;
         background-color: rgba($color:black, $alpha: 0.4);
+    }
+    #input-path-container{
+        display: none;
     }
     >div{
         position: relative;
@@ -67,7 +70,6 @@
                 
             }
             section{
-                
                 border-bottom: solid $green 2px;
                 input, textarea{
                     background-color: transparent;
@@ -92,6 +94,12 @@
                     /* Microsoft Edge */
                     color: $green;
                 }
+            }
+            :nth-child(4){
+                border-bottom: none;
+            }
+            :nth-child(5){
+                border-bottom: none;
             }
         }
         
