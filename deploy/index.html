@@ -50,25 +50,38 @@
                 </svg>
         
                 <i class="fas fa-compact-disc"></i>
-        
-                <svg id="input-path-container" width="359" height="80" xmlns="http://www.w3.org/2000/svg">
-                    <path id="input-path" d="M0 35.522c37 0 112.109 43 185.875 43S298.126 1 358.333 1" stroke="none" fill="none" fill-rule="evenodd"/>
-                </svg>
             
                 <h2 class="main-text">Get in Touch!</h2>
                 <h3 class="main-text" id="description">Have a question or a comment about our products? <br> Feel free to share it with us.</h3>
         
+                
+        
                 <div id="form">
                     <form action="https://formspree.io/mlepowjj" method="POST">
-                        <section class="input">
-                            <input  type="text" placeholder="Name" name="name">
-                        </section>
-                        <section class="input">
-                            <input type="email" placeholder="Email" name="email">
-                        </section>
+                        <!-- <svg class="input-path-container" width="359" height="80" xmlns="http://www.w3.org/2000/svg">
+                            <path id="input-path" d="M0 35.522c37 0 112.109 43 185.875 43S298.126 1 358.333 1" stroke="#000" fill="none" fill-rule="evenodd"/>
+                        </svg> -->
                         
                         <section class="input">
-                            <textarea placeholder="Your Message" name="comment" cols="50" rows="5"></textarea>
+                            <svg class="input-path-container" width="359" height="45" xmlns="http://www.w3.org/2000/svg">
+                                <path id="name-path" d="M0 .522c37 0 112.109 43 185.875 43S298.793.522 359 .522" stroke="none" fill="none" fill-rule="evenodd"/>
+                            </svg>
+                            
+                            <input id="name" type="text" placeholder="Name" name="name">
+                        </section>
+                        <section class="input">
+                            <svg class="input-path-container" width="359" height="45" xmlns="http://www.w3.org/2000/svg">
+                                <path id="email-path" d="M0 .522c37 0 112.109 43 185.875 43S298.793.522 359 .522" stroke="none" fill="none" fill-rule="evenodd"/>
+                            </svg>
+                        
+                            <input id="email"  type="email" placeholder="Email" name="email">
+                        </section>
+                        
+                        <section  class="input">
+                            <svg class="input-path-container" width="359" height="45" xmlns="http://www.w3.org/2000/svg">
+                                <path id="message-path" d="M0 .522c37 0 112.109 43 185.875 43S298.793.522 359 .522" stroke="none" fill="none" fill-rule="evenodd"/>
+                            </svg>
+                            <textarea id="message" placeholder="Your Message" name="comment" cols="50" rows="5"></textarea>
                         </section>
                         <section class="main-text">
                             <h3>We don’t share your information to others</h3>

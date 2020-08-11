@@ -628,17 +628,12 @@ header div #burger-container i {
 ============= */
 #pop-up {
   position: absolute;
-  align-items: center;
-  justify-content: center;
 }
 #pop-up #shadow-bg {
   position: fixed;
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-}
-#pop-up #input-path-container {
-  display: none;
 }
 #pop-up > div {
   position: relative;
@@ -691,6 +686,14 @@ header div #burger-container i {
 }
 #pop-up > div #form form {
   width: 60%;
+}
+#pop-up > div #form form .input {
+  position: relative;
+}
+#pop-up > div #form form .input-path-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #pop-up > div #form section {
   border-bottom: solid #42B5A0 2px;

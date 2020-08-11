@@ -5,17 +5,15 @@
     // display: none;
     position: absolute;
     // display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     #shadow-bg{
         position: fixed;
         height: 100vh;
         width: 100%;
         background-color: rgba($color:black, $alpha: 0.4);
     }
-    #input-path-container{
-        display: none;
-    }
+    
     >div{
         position: relative;
         overflow: hidden;
@@ -66,10 +64,18 @@
             justify-content: flex-end;
             margin: 10px 80px 50px;
             form{
+                .input{
+                    position: relative;
+                }
                 width: 60%;
-                
+                .input-path-container{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
             section{
+                // border: 1px red solid;
                 border-bottom: solid $green 2px;
                 input, textarea{
                     background-color: transparent;
@@ -83,6 +89,7 @@
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: $green;
                     opacity: 1;
+                    
                 }
         
                 :-ms-input-placeholder {
@@ -101,6 +108,9 @@
             :nth-child(5){
                 border-bottom: none;
             }
+            // :nth-child(6){
+            //     border-bottom: none;
+            // }
         }
         
     }
