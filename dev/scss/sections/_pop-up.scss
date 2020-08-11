@@ -1,17 +1,26 @@
 /* =============
     Pop-up
 ============= */
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#pop-up{
+    // display: none;
+    position: absolute;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    #shadow-bg{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba($color:black, $alpha: 0.4);
+    }
     
     >div{
-        border: solid 1px red;
         position: relative;
         overflow: hidden;
         width: 700px;
         height: auto;
+        background-color: white;
+        z-index: 1;
         i{
             position: absolute;
             z-index: 1;
@@ -46,7 +55,7 @@ section{
         #waves{
             position: absolute;
             top: 0;
-            left: 0;
+            left: -20px;
             z-index: -1;
             width: 50%;
         }
@@ -55,11 +64,18 @@ section{
             justify-content: flex-end;
             margin: 10px 80px 50px;
             form{
+                .input{
+                    position: relative;
+                }
                 width: 60%;
-                
+                .input-path-container{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
             section{
-                
+                // border: 1px red solid;
                 border-bottom: solid $green 2px;
                 input, textarea{
                     background-color: transparent;
@@ -73,6 +89,7 @@ section{
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: $green;
                     opacity: 1;
+                    
                 }
         
                 :-ms-input-placeholder {
@@ -85,6 +102,15 @@ section{
                     color: $green;
                 }
             }
+            :nth-child(4){
+                border-bottom: none;
+            }
+            :nth-child(5){
+                border-bottom: none;
+            }
+            // :nth-child(6){
+            //     border-bottom: none;
+            // }
         }
         
     }

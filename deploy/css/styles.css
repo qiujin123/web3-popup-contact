@@ -477,28 +477,173 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+}
+header div {
+  background-color: rgba(51, 27, 57, 0.6);
+  display: grid;
+  grid-template-columns: auto 55%;
+  grid-template-areas: "logo burger";
+  position: relative;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  header div {
+    height: 70px;
+    grid-template-columns: auto 80%;
+    grid-template-areas: "logo nav";
+  }
+}
+@media (min-width: 1025px) {
+  header div {
+    grid-template-columns: auto 60%;
+  }
+}
+header div #logo {
+  grid-area: logo;
+  color: #42B5A0;
+  font-size: 3.125rem;
+  position: absolute;
+  left: 15px;
+  bottom: -20px;
+  text-shadow: -3px 8px 15px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  header div #logo {
+    font-size: 4.0625rem;
+    left: 30px;
+    bottom: -30px;
+  }
+}
+header div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  header div #burger-container {
+    display: none !important;
+  }
+}
+header div #burger-container i {
+  color: #42B5A0;
+  font-size: 1.5625rem;
+}
+@media (min-width: 768px) {
+  header div #nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+  }
+  header div #nav li {
+    border-right: solid 2px #FA448D;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header div #nav li h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #42B5A0;
+  }
+  header div #nav :last-child {
+    border-right: unset;
+  }
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Index
 ============= */
+#hero-image {
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../img/hero.jpg);
+  background-blend-mode: multiply;
+  background-color: rgba(73, 33, 136, 0.3);
+}
+#hero-image > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #hero-image > div {
+    justify-content: center;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-image > div {
+    justify-content: initial;
+  }
+}
+#hero-image > div h1 {
+  color: #FA448D;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 900;
+  text-align: left;
+  margin: 0 30px;
+}
+@media (min-width: 768px) {
+  #hero-image > div h1 {
+    width: 60%;
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  #hero-image > div h1 {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-image > div h1 {
+    width: 60%;
+    margin: 0 60px;
+    text-align: left;
+  }
+}
+#hero-image > div h1 .italic {
+  font-style: italic;
+}
+
 /* =============
     Pop-up
 ============= */
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#pop-up {
+  position: absolute;
 }
-section > div {
-  border: solid 1px red;
+#pop-up #shadow-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#pop-up > div {
   position: relative;
   overflow: hidden;
   width: 700px;
   height: auto;
+  background-color: white;
+  z-index: 1;
 }
-section > div i {
+#pop-up > div i {
   position: absolute;
   z-index: 1;
   left: -145px;
@@ -515,37 +660,45 @@ section > div i {
     -webkit-transform: rotate(359deg);
   }
 }
-section > div #X {
+#pop-up > div #X {
   position: absolute;
   top: 30px;
   right: 30px;
 }
-section > div #handle {
+#pop-up > div #handle {
   position: absolute;
   top: -30px;
   z-index: 2;
   left: 80px;
   transform: rotate(20deg);
 }
-section > div #waves {
+#pop-up > div #waves {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
   z-index: -1;
   width: 50%;
 }
-section > div #form {
+#pop-up > div #form {
   display: flex;
   justify-content: flex-end;
   margin: 10px 80px 50px;
 }
-section > div #form form {
+#pop-up > div #form form {
   width: 60%;
 }
-section > div #form section {
+#pop-up > div #form form .input {
+  position: relative;
+}
+#pop-up > div #form form .input-path-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#pop-up > div #form section {
   border-bottom: solid #42B5A0 2px;
 }
-section > div #form section input, section > div #form section textarea {
+#pop-up > div #form section input, #pop-up > div #form section textarea {
   background-color: transparent;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -553,20 +706,26 @@ section > div #form section input, section > div #form section textarea {
   width: 100%;
   padding: 20px 0;
 }
-section > div #form section ::placeholder {
+#pop-up > div #form section ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #42B5A0;
   opacity: 1;
 }
-section > div #form section :-ms-input-placeholder {
+#pop-up > div #form section :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #42B5A0;
 }
-section > div #form section ::-ms-input-placeholder {
+#pop-up > div #form section ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #42B5A0;
 }
-section h2 {
+#pop-up > div #form :nth-child(4) {
+  border-bottom: none;
+}
+#pop-up > div #form :nth-child(5) {
+  border-bottom: none;
+}
+#pop-up h2 {
   padding-top: 30px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -575,7 +734,7 @@ section h2 {
   font-style: italic;
   color: #FA448D;
 }
-section h3 {
+#pop-up h3 {
   padding: 20px 0;
   text-align: center;
   font-family: "Nunito", sans-serif;
@@ -585,6 +744,18 @@ section h3 {
   font-style: italic;
   color: #FA448D;
 }
-section #description {
+#pop-up #description {
   padding: 0;
+}
+
+#music-box-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#music-box-container #music #box {
+  cursor: pointer;
+  transition: 0.25s;
 }
