@@ -697,9 +697,6 @@ header div #burger-container i {
   top: 0;
   left: 0;
 }
-#pop-up > div #form section {
-  border-bottom: solid #42B5A0 2px;
-}
 #pop-up > div #form section input, #pop-up > div #form section textarea {
   background-color: transparent;
   font-family: "Nunito", sans-serif;
@@ -720,6 +717,11 @@ header div #burger-container i {
 #pop-up > div #form section ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #42B5A0;
+}
+#pop-up > div #form section .bottom-border {
+  height: 2px;
+  width: 100%;
+  background-color: #42B5A0;
 }
 #pop-up > div #form :nth-child(4) {
   border-bottom: none;

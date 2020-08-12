@@ -75,7 +75,6 @@
             }
             section{
                 // border: 1px red solid;
-                border-bottom: solid $green 2px;
                 input, textarea{
                     background-color: transparent;
                     font-family: 'Nunito', sans-serif;
@@ -99,6 +98,11 @@
                 ::-ms-input-placeholder {
                     /* Microsoft Edge */
                     color: $green;
+                }
+                .bottom-border{
+                    height:2px;
+                    width: 100%;
+                    background-color: $green;
                 }
             }
             :nth-child(4){
