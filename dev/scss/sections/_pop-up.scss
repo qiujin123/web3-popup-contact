@@ -4,14 +4,12 @@
 #pop-up{
     // display: none;
     position: fixed;
-    margin: auto;
-    #shadow-bg{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba($color:black, $alpha: 0.4);
-    }
-    
+    background-color: rgba($color:black, $alpha: 0.4);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     >div{
         position: relative;
         overflow: hidden;
