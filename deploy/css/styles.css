@@ -622,6 +622,9 @@ header div #burger-container i {
 #hero-image > div h1 .italic {
   font-style: italic;
 }
+#hero-image #index-content {
+  height: 300vh;
+}
 
 /* =============
     Pop-up
@@ -757,11 +760,9 @@ header div #burger-container i {
 }
 
 #music-box-container {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 #music-box-container #music #box {
   cursor: pointer;
