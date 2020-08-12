@@ -13,9 +13,8 @@ let messagePath = document.querySelector("#message-path");
 
 formAnimationTimeline.from(".main-text",{
     duration: 1,
-    y:"-=100",
-    alpha:0,
-    stagger:0.25
+    y:"-=150",
+    alpha:0
 }, "formAnimation")
 
 .from("#name", {
